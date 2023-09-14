@@ -20,11 +20,9 @@
 #include "main.h"
 #include "usart.h"
 #include "gpio.h"
-#include "serial_lib.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "serial_lib.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
