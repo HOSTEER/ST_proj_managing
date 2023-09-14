@@ -20,10 +20,9 @@
 #include "main.h"
 #include "usart.h"
 #include "gpio.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "serial_lib.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -74,7 +73,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  setvbuf(stdin, NULL, _IONBF, 0);
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -95,6 +94,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  serial();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
