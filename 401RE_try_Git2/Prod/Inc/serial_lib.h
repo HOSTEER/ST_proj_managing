@@ -31,4 +31,8 @@ GETCHAR_PROTOTYPE
   return ch;
 }
 
+
+/**
+ * cette fonction envoi un "ok" sur la liaison série.
+ */
 void serial(void);
